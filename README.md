@@ -30,6 +30,19 @@ Task 1 - Install a multi node k8s cluster in your laptop, use any opensource dis
              
              
 Task 2 - Use FluxCD tool (https://fluxcd.io/) to setup installations in the cluster:
+           - Installed the Flux CLI
+             $curl -s https://fluxcd.io/install.sh | sudo bash
+           - Created a Github Personal Access Token
+           - Exported the token and username:
+               export GITHUB_TOKEN=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
+               export GITHUB_USER=syedabrarali 
+           - Installed Flux:
+                flux bootstrap github \
+                  --owner=$GITHUB_USER \
+                  --repository=fluxCD_K8s \
+                  --branch=main \
+                  --path=./logging \
+                  --personal
 
 
 Install Elasticsearch using official helm chart and Vector agent (https://vector.dev/) through official helmchart
