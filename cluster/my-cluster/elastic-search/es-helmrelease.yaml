@@ -1,0 +1,16 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: elastic-search
+  namespace: elastic-search
+spec:
+  chart:
+    spec:
+      chart: elasticsearch
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: GitRepository
+        name: elastic-search
+  interval: 1m0s
+
