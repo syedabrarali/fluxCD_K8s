@@ -1,0 +1,12 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: vector
+  namespace: vector
+spec:
+  interval: 30s
+  ref:
+    branch: master
+  url: https://github.com/vectordotdev/helm-charts/charts
+
