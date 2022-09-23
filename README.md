@@ -37,7 +37,7 @@ Task 2 - Use FluxCD tool (https://fluxcd.io/) to setup installations in the clus
            - Created a Github Personal Access Token
            
            - Exported the token and username:
-               export GITHUB_TOKEN=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
+               export GITHUB_TOKEN=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
                export GITHUB_USER=syedabrarali
                
            - Installed Flux:
