@@ -13,4 +13,5 @@ spec:
         kind: GitRepository
         name: vector1
   interval: 1m0s
-
+  values:
+    replicaCount: 3
